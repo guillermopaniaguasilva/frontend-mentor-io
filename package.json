@@ -1,8 +1,10 @@
 {
-  "name": "frontend-mentor-io-vite",
+  "name": "frontend-mentor-io",
+  "description": "This monorepo contains all the challenges from frontend.io.",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "author": "Guille A. Paniagua Silva",
   "private": true,
   "workspaces": [
     "commons",
