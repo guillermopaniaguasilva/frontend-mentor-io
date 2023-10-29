@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Wrapper, Label, Input, Submit } from './styles';
 
 export default function SignUpForm() {

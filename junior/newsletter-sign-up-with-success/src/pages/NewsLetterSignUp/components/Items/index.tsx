@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Wrapper } from './styles';
 import CheckItem from '../CheckItem';
 
@@ -12,8 +10,8 @@ export default function Items() {
 
   return (
     <Wrapper>
-      {copy.map((text) => (
-        <CheckItem text={text} />
+      {copy.map((text, i) => (
+        <CheckItem key={i} text={text} />
       ))}
     </Wrapper>
   );

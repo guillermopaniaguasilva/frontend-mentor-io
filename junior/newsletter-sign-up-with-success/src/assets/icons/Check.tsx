@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const Check = function () {
   return (
     <svg
@@ -10,7 +8,7 @@ export const Check = function () {
       fill="none"
     >
       <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-      <path d="M6 11.3812L8.73464 14L15 8" stroke="white" stroke-width="2" />
+      <path d="M6 11.3812L8.73464 14L15 8" stroke="white" strokeWidth="2" />
     </svg>
   );
 };

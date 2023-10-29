@@ -1,6 +1,4 @@
-import React from 'react';
-
-import { useIsDesktopQuery } from '../../../../../commons/src/helpers/mediaQuery';
+import { useIsDesktopQuery } from '@commons/helpers/mediaQuery';
 import { Hero, Container, Heading, Description } from './styles';
 import Items from './components/Items';
 import SignUpForm from './components/SignUpForm';

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Wrapper, Text, StyledCheckIcon } from './styles';
 
 type CheckItemProps = {
