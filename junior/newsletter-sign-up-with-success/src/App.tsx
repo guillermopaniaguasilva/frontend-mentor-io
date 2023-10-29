@@ -1,10 +1,10 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import theme from '../../../commons/src/theme';
+import theme from '@commons/theme';
 import NewsLetterSignUp from './pages/NewsLetterSignUp';
 
-import '../../../commons/src/theme/main.scss';
+import '@commons/theme/main.scss';
 
 export default function App() {
   return (
