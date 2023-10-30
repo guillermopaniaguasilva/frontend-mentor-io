@@ -1,8 +1,8 @@
-import { Container, Result, Heading, Description } from './styles.tsx';
-import IllustrationThankYou from '@assets/newbie/intereactive-rating-component/IllustrationThankYou.js';
+import IllustrationThankYou from '@assets/IllustrationThankYou.js';
+import { RatingContext } from '@context/RatingContext';
 import { useContext, useEffect } from 'react';
-import { RatingContext } from '../../../../context/RatingContext/index.tsx';
 import { useNavigate } from 'react-router-dom';
+import { Container, Description, Heading, Result } from './styles.tsx';
 
 export default function ThankYou() {
   const { scoreSelected, setScore, setScoreSelected } =

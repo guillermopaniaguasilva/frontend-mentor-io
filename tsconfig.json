@@ -6,9 +6,6 @@
     "paths": {
       "@commons/*": [
         "commons/src/*"
-      ],
-      "@assets/*": [
-        "assets/*"
       ]
     },
   },

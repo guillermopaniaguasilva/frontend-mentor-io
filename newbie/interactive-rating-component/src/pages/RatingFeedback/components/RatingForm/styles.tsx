@@ -1,5 +1,5 @@
+import { COLORS } from '@styles/colors.ts';
 import { styled } from 'styled-components';
-import { COLORS } from '../../../../styles/colors.ts';
 
 type ScoreType = {
   selected: boolean;

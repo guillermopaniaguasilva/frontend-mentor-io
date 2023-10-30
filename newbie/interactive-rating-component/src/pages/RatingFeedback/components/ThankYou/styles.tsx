@@ -1,6 +1,6 @@
+import IllustrationThankYou from '@assets/IllustrationThankYou.js';
 import styled from 'styled-components';
 import { COLORS } from '../../../../styles/colors.ts';
-import IllustrationThankYou from '@assets/newbie/intereactive-rating-component/IllustrationThankYou.js';
 
 export const Container = styled.div`
   width: 327px;

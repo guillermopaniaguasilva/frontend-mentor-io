@@ -1,14 +1,13 @@
-import { useContext, useEffect } from 'react';
-import { RatingContext } from '../../../../context/RatingContext';
-import { FormEvent } from 'react';
+import { RatingContext } from '@context/RatingContext';
+import { FormEvent, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
+  Button,
+  Description,
   Form,
   Heading,
-  Description,
-  ScoresContainer,
   Score,
-  Button,
+  ScoresContainer,
 } from './styles.tsx';
 
 type RatingFormProps = {

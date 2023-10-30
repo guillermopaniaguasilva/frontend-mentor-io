@@ -1,6 +1,18 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@context/*": [
+        "src/context/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ]
+    },
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": [
