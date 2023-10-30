@@ -1,10 +1,7 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { FormEvent, useState, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
+import { RatingContext } from '../../../../context/RatingContext';
+import { FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {
-  setRating,
-  setMaxScore,
-} from '../../../../store/rating/rating.action.ts';
 import {
   Form,
   Heading,
@@ -18,29 +15,19 @@ type RatingFormProps = {
   maxScore: number;
 };
 
-export type AppState = {
-  rating: {
-    value: number;
-    maxScore: number;
-  };
-};
-
 export default function RatingForm({ maxScore }: RatingFormProps) {
-  const [selected, setSelected] = useState(false);
-  const navigate = useNavigate();
-  const rating = useSelector((state: AppState) => state.rating.value);
-  const dispatch = useDispatch();
-
+  const { score, setScore, setScoreSelected, setMaxScore } =
+    useContext(RatingContext);
   const scores = Array.from({ length: maxScore }, (_, index) => index + 1);
 
-  useEffect(() => {
-    dispatch(setMaxScore(maxScore));
-  }, [maxScore, dispatch]);
-
+  const navigate = useNavigate();
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
+    setScoreSelected(score);
     navigate('/thank-you');
   };
+
+  useEffect(() => setMaxScore(maxScore), [maxScore, setMaxScore]);
 
   return (
     <Form onSubmit={onSubmit}>
@@ -50,16 +37,13 @@ export default function RatingForm({ maxScore }: RatingFormProps) {
         appreciated to help us improve our offering!
       </Description>
       <ScoresContainer>
-        {scores.map((score) => (
+        {scores.map((value) => (
           <Score
-            key={score}
-            selected={rating === score}
-            onClick={() => {
-              setSelected(!selected);
-              dispatch(setRating(score));
-            }}
+            key={value}
+            selected={value === score}
+            onClick={() => setScore(value)}
           >
-            {score}
+            {value}
           </Score>
         ))}
       </ScoresContainer>

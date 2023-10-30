@@ -1,5 +1,5 @@
 import { Container, Circle } from './styles.tsx';
-import Index from '../RatingForm/index.tsx';
+import RatingForm from './components/RatingForm';
 import IconStart from '@assets/newbie/intereactive-rating-component/IconStar.tsx';
 
 const RatingFeedback = () => {
@@ -8,7 +8,7 @@ const RatingFeedback = () => {
       <Circle>
         <IconStart accessibilityTitle="" titleId="" />
       </Circle>
-      <Index maxScore={5} />
+      <RatingForm maxScore={5} />
     </Container>
   );
 };

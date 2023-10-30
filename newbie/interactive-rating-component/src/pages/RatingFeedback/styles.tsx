@@ -1,5 +1,5 @@
 import { styled } from 'styled-components';
-import { COLORS } from '../../../../styles/colors.ts';
+import { COLORS } from '../../styles/colors.ts';
 
 export const Container = styled.div`
   width: 327px;
