@@ -1,0 +1,10 @@
+{
+  "name": "product-preview-card-component",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "css:build": "sass --style=compressed src/scss/styles.scss public/css/styles.css",
+    "css:watch": "nodemon -e scss -x \"yarn css:build\""
+  }
+}

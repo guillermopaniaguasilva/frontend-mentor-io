@@ -1,0 +1,37 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: map-get($display-breakpoints, 'phone')) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-portrait {
+    @media only screen and (min-width: map-get($display-breakpoints, 'tablet-portrait')) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-landscape {
+    @media only screen and (min-width: map-get($display-breakpoints, 'tablet-landscape')) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == small-desktop {
+    @media only screen and (min-width: map-get($display-breakpoints, 'small-desktop')) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == regular-desktop {
+    @media only screen and (min-width: map-get($display-breakpoints, 'regular-desktop')) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: map-get($display-breakpoints, 'big-desktop')) {
+      @content;
+    }
+  }
+}
