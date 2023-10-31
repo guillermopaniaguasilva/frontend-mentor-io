@@ -1,6 +1,5 @@
 import { RatingContext } from '@context/RatingContext';
 import { FormEvent, useContext, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import {
   Button,
   Description,
@@ -19,11 +18,9 @@ export default function RatingForm({ maxScore }: RatingFormProps) {
     useContext(RatingContext);
   const scores = Array.from({ length: maxScore }, (_, index) => index + 1);
 
-  const navigate = useNavigate();
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
     setScoreSelected(score);
-    navigate('/thank-you');
   };
 
   useEffect(() => setMaxScore(maxScore), [maxScore, setMaxScore]);
