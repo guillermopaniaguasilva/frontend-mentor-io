@@ -1,5 +1,4 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
@@ -9,8 +8,11 @@
       "@assets/*": [
         "src/assets/*"
       ],
-      "@styles/*": [
-        "src/styles/*"
+      "@helpers/*": [
+        "../../commons/src/helpers/*"
+      ],
+      "@theme/*": [
+        "../../commons/src/theme/*"
       ]
     },
     "target": "ES2020",

@@ -1,7 +1,7 @@
-import { useIsDesktopQuery } from '@commons/helpers/mediaQuery';
-import { Hero, Container, Heading, Description } from './styles';
+import { useIsDesktopQuery } from '@helpers/mediaQuery';
 import Items from './components/Items';
 import SignUpForm from './components/SignUpForm';
+import { Container, Description, Heading, Hero } from './styles';
 
 export default function NewsLetterSignUp() {
   const isDesktop = useIsDesktopQuery();

@@ -1,4 +1,3 @@
-import { COLORS } from '@styles/colors.ts';
 import { styled } from 'styled-components';
 
 type ScoreType = {
@@ -13,7 +12,7 @@ export const Form = styled.form`
 export const Heading = styled.h1`
   margin-top: 16px;
   margin-bottom: 16px;
-  color: ${COLORS.WHITE};
+  color: ${(props) => props.theme.colors.white};
   font-size: 24px;
   font-weight: 700;
 `;
@@ -21,8 +20,9 @@ export const Heading = styled.h1`
 export const Description = styled.p`
   font-size: 14px;
   font-weight: 400;
-  color: ${COLORS.LIGHT_GREY};
+  color: ${(props) => props.theme.colors.lightGray};
   line-height: 22px;
+  padding-bottom: 24px;
 `;
 
 export const ScoresContainer = styled.div`
@@ -35,17 +35,17 @@ export const Score = styled.div<ScoreType>`
   line-height: 42px;
   border-radius: 50%;
   text-align: center;
-  background: ${COLORS.DARK_BLUE};
-  color: ${COLORS.MEDIUM_GREY};
+  background: ${(props) => props.theme.colors.darkBlue};
+  color: ${(props) => props.theme.colors.mediumGray};
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
 
-  ${({ selected }: ScoreType) =>
-    selected &&
+  ${(props) =>
+    props.selected &&
     `
-  background-color: ${COLORS.ORANGE};
-  color: ${COLORS.WHITE};
+  background-color: ${props.theme.colors.orange};
+  color: ${props.theme.colors.white};
   `}
 `;
 
@@ -58,14 +58,14 @@ export const Button = styled.button`
   border-radius: 30px;
   text-transform: uppercase;
   letter-spacing: 1.8px;
-  color: ${COLORS.WHITE};
+  color: ${(props) => props.theme.colors.white};
   font-size: 14px;
   font-weight: 700;
-  background-color: ${COLORS.ORANGE};
+  background-color: ${(props) => props.theme.colors.orange};
   cursor: pointer;
 
   &:hover {
-    background-color: ${COLORS.WHITE};
-    color: ${COLORS.ORANGE};
+    background-color: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.orange};
   }
 `;

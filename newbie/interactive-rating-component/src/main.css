@@ -1,4 +1,17 @@
-body {
-  background-color: hsl(213, 19%, 18%);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: #131518;
   font-family: 'Overpass', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }

@@ -11,6 +11,11 @@ const colors = {
   charcoalGrey: 'hsl(235, 18%, 26%)',
   grey: 'hsl(231, 7%, 60%)',
   white: 'hsl(0, 0%, 100%)',
+  orange: `hsl(25, 97%, 53%)`,
+  lightGray: `hsl(217, 12%, 63%)`,
+  mediumGray: `hsl(216, 12%, 54%)`,
+  darkBlue: `hsl(213, 19%, 18%)`,
+  veryDarkBlue: `hsl(216, 12%, 8%)`,
 };
 
 const fontSizes = {
@@ -39,6 +44,11 @@ declare module 'styled-components' {
       charcoalGrey: string;
       grey: string;
       white: string;
+      orange: string;
+      lightGray: string;
+      mediumGray: string;
+      darkBlue: string;
+      veryDarkBlue: string;
     };
     fontSizes: {
       paragraph: string;

@@ -1,18 +1,10 @@
 import IllustrationThankYou from '@assets/IllustrationThankYou';
 import { RatingContext } from '@context/RatingContext';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { Container, Description, Heading, Result } from './styles.tsx';
 
 export default function ThankYou() {
-  const { scoreSelected, setScore, setScoreSelected } =
-    useContext(RatingContext);
-
-  useEffect(() => {
-    window.setTimeout(() => {
-      setScore(0);
-      setScoreSelected(0);
-    }, 5000);
-  }, [setScore, setScoreSelected]);
+  const { scoreSelected } = useContext(RatingContext);
 
   return (
     <Container>

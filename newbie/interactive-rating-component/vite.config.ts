@@ -12,6 +12,8 @@ export default defineConfig({
       '@context': path.resolve(__dirname, 'src/context'),
       '@assets': path.resolve(__dirname, 'src/assets'),
       '@styles': path.resolve(__dirname, 'src/styles'),
+      '@helpers': path.resolve(__dirname, '../../commons/src/helpers'),
+      '@theme': path.resolve(__dirname, '../../commons/src/theme'),
     },
   },
 });

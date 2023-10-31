@@ -1,6 +1,5 @@
 import IllustrationThankYou from '@assets/IllustrationThankYou.js';
 import styled from 'styled-components';
-import { COLORS } from '../../../../styles/colors.ts';
 
 export const Container = styled.div`
   width: 327px;
@@ -23,8 +22,8 @@ export const Image = styled(IllustrationThankYou)`
 `;
 
 export const Result = styled.p`
-  color: ${COLORS.ORANGE};
-  background-color: ${COLORS.DARK_BLUE};
+  color: ${(props) => props.theme.colors.orange};
+  background-color: ${(props) => props.theme.colors.darkBlue};
   padding: 6px 12px;
   border-radius: 30px;
   margin-top: 24px;
@@ -34,17 +33,18 @@ export const Result = styled.p`
 `;
 
 export const Heading = styled.h1`
-  color: ${COLORS.WHITE};
+  color: ${(props) => props.theme.colors.white};
   font-size: 24px;
   font-weight: 700;
   margin: 0;
+  padding-bottom: 10px;
 `;
 
 export const Description = styled.p`
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-  color: ${COLORS.LIGHT_GREY};
+  color: ${(props) => props.theme.colors.lightGray};
   margin-left: 24px;
   margin-right: 24px;
   text-align: center;

@@ -1,5 +1,5 @@
+import headerImage from '@assets/images/illustration-sign-up-mobile.svg';
 import styled from 'styled-components';
-import headerImage from '../../assets/images/illustration-sign-up-mobile.svg';
 
 export const Hero = styled.div`
   background-image: url(${headerImage});
