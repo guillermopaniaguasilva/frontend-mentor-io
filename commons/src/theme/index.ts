@@ -10,12 +10,12 @@ const colors = {
   darkSlateGrey: 'hsl(234, 29%, 20%)',
   charcoalGrey: 'hsl(235, 18%, 26%)',
   grey: 'hsl(231, 7%, 60%)',
-  white: 'hsl(0, 0%, 100%)',
-  orange: `hsl(25, 97%, 53%)`,
-  lightGray: `hsl(217, 12%, 63%)`,
-  mediumGray: `hsl(216, 12%, 54%)`,
-  darkBlue: `hsl(213, 19%, 18%)`,
-  veryDarkBlue: `hsl(216, 12%, 8%)`,
+  white: '#FFFFFF',
+  orange: '#FC7614',
+  lightGray: '#969FAD',
+  mediumGray: '#7C8798',
+  darkBlue: '#262E38',
+  veryDarkBlue: '#131518',
 };
 
 const fontSizes = {
