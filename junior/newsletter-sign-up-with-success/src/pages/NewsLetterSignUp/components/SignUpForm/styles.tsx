@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 export const Label = styled.label`
   margin-bottom: 8px;
   color: ${(props) => props.theme.colors.darkSlateGrey};
-  font-family: ${(props) => props.theme.fontFamilies.main};
+  font-family: ${(props) => props.theme.fontFamilies.Roboto};
   font-size: 12px;
   font-weight: ${(props) => props.theme.fontWeights.bold};
   line-height: 18px;
@@ -37,7 +37,7 @@ export const Submit = styled.button`
   cursor: pointer;
 
   color: ${(props) => props.theme.colors.white};
-  font-family: ${(props) => props.theme.fontFamilies.main};
+  font-family: ${(props) => props.theme.fontFamilies.Roboto};
   font-size: ${(props) => props.theme.fontSizes.paragraph};
   font-weight: ${(props) => props.theme.fontWeights.bold};
   line-height: 24px;

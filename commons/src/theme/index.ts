@@ -6,16 +6,20 @@ const breakpoints = {
 };
 
 const colors = {
-  tomato: 'hsl(4, 100%, 67%)',
-  darkSlateGrey: 'hsl(234, 29%, 20%)',
-  charcoalGrey: 'hsl(235, 18%, 26%)',
-  grey: 'hsl(231, 7%, 60%)',
+  tomato: '#FF6257',
+  darkSlateGrey: '#242742',
+  charcoalGrey: '#36384E',
+  grey: '#36384E',
   white: '#FFFFFF',
   orange: '#FC7614',
   lightGray: '#969FAD',
   mediumGray: '#7C8798',
   darkBlue: '#262E38',
   veryDarkBlue: '#131518',
+  veryDarkGrayishBlue: '#48556A',
+  desaturatedDarkBlue: '#6D7F97',
+  grayishBlue: '#9EAFC2',
+  lightGrayishBlue: '#ECF2F8',
 };
 
 const fontSizes = {
@@ -29,7 +33,8 @@ const fontWeights = {
 };
 
 const fontFamilies = {
-  main: 'Roboto',
+  Roboto: 'Roboto',
+  Manrope: 'Manrope',
 };
 
 declare module 'styled-components' {
@@ -49,6 +54,10 @@ declare module 'styled-components' {
       mediumGray: string;
       darkBlue: string;
       veryDarkBlue: string;
+      veryDarkGrayishBlue: string;
+      desaturatedDarkBlue: string;
+      grayishBlue: string;
+      lightGrayishBlue: string;
     };
     fontSizes: {
       paragraph: string;
@@ -59,7 +68,8 @@ declare module 'styled-components' {
       bold: number;
     };
     fontFamilies: {
-      main: string;
+      Roboto: string;
+      Manrope: string;
     };
   }
 }

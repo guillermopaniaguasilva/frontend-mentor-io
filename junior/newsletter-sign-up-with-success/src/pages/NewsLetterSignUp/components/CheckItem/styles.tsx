@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Text = styled.p`
-  font-family: ${(props) => props.theme.fontFamilies.main};
+  font-family: ${(props) => props.theme.fontFamilies.Roboto};
   font-size: ${(props) => props.theme.fontSizes.paragraph};
   font-weight: ${(props) => props.theme.fontWeights.light};
   line-height: 24px;

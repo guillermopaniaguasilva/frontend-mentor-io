@@ -13,7 +13,7 @@ export const Container = styled.div`
 `;
 
 export const Heading = styled.h1`
-  font-family: ${(props) => props.theme.fontFamilies.main};
+  font-family: ${(props) => props.theme.fontFamilies.Roboto};
   font-size: ${(props) => props.theme.fontSizes.heading};
   font-weight: ${(props) => props.theme.fontWeights.bold};
   line-height: 40px;
@@ -22,7 +22,7 @@ export const Heading = styled.h1`
 `;
 
 export const Description = styled.h4`
-  font-family: ${(props) => props.theme.fontFamilies.main};
+  font-family: ${(props) => props.theme.fontFamilies.Roboto};
   font-size: ${(props) => props.theme.fontSizes.paragraph};
   font-weight: ${(props) => props.theme.fontWeights.light};
   line-height: 24px;
