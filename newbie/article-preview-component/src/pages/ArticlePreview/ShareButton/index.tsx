@@ -1,5 +1,4 @@
-import Share from '@assets/icons/Share';
-import { Background } from './styles';
+import { Background, StyledShareIcon } from './styles';
 
 type ShareButtonProps = {
   $dark: boolean;
@@ -9,7 +8,7 @@ type ShareButtonProps = {
 const ShareButton = ({ onClick, $dark }: ShareButtonProps) => {
   return (
     <Background onClick={onClick} $dark={$dark}>
-      <Share accessibilityTitle="" titleId="" />
+      <StyledShareIcon accessibilityTitle="" titleId="" $dark={$dark} />
     </Background>
   );
 };

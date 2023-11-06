@@ -33,16 +33,16 @@ export default function ArticlePreview({
         <Title>{title}</Title>
         <Summary>{summary}</Summary>
 
-        {!isDesktop &&
-          (showSharePane ? (
-            <SharePane onShareClick={onShareClick} withShareButton />
-          ) : (
-            <AuthorFooter
-              author={author}
-              date={date}
-              onShareClick={onShareClick}
-            />
-          ))}
+        {!isDesktop && showSharePane ? (
+          <SharePane onShareClick={onShareClick} withShareButton />
+        ) : (
+          <AuthorFooter
+            author={author}
+            date={date}
+            onShareClick={onShareClick}
+          />
+        )}
+
         {isDesktop && (
           <AuthorFooter
             author={author}
@@ -50,6 +50,7 @@ export default function ArticlePreview({
             onShareClick={onDisplayTooltip}
           />
         )}
+
         {isDesktop &&
           (showShareTooltip ? <SharePane onShareClick={onShareClick} /> : null)}
       </Content>

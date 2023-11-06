@@ -3,7 +3,9 @@ import { styled } from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  margin: 32px 0 20px 0;
+  margin: 44px 0 20px 0;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     margin-top: 45px;

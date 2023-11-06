@@ -9,7 +9,7 @@ export type SVGProps = React.PropsWithoutRef<JSX.IntrinsicElements['svg']> & {
   titleId: string;
 };
 
-export default function Pinterest({
+export default function Share({
   accessibilityDesc,
   accessibilityTitle,
   titleId,

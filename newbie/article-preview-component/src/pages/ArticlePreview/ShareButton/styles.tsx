@@ -1,3 +1,4 @@
+import Share from '@assets/icons/Share';
 import { styled } from 'styled-components';
 
 export const Background = styled.div<{
@@ -20,17 +21,17 @@ export const Background = styled.div<{
       cursor: pointer;
       background-color: ${(props) => props.theme.colors.desaturatedDarkBlue};
 
-      & img {
+      & svg {
         filter: brightness(0) invert(1);
       }
     }
   }
 `;
 
-export const Image = styled.img<{
+export const StyledShareIcon = styled(Share)<{
   $dark: boolean;
 }>`
   width: 15px;
   height: 13px;
-  ${(props) => (props.$dark ? 'filter: brightness(0) invert(1);' : '')}
+  ${(props) => props.$dark && 'filter: brightness(0) invert(1);'}
 `;
